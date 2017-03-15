@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ethernetDetailItemRequest",
+  "id": "ethernetDetailItemRequest",
+  "description": "Details of an ethernet service. These details are used for Serviceability Requests.",
+  "type": "object",
+  "required": [
+      "objectType"
+  ],
+  "properties": {
+    "objectType": {
+      "type": "string",
+      "enum": [
+          "ethernetDetailItemRequest"
+      ],
+      "description": "The type of the object, ethernetDetailItemRequest."
+    },
+    "bandwidth": {
+      "$ref": "informationRateQuantity.json#",
+      "description": "The service's bandwidth (e.g. 10Mbps, 100Mbps, 1Gbps, 10Gbps).",
+      "title": "Bandwidth"
+    },
+    "maxPortSpeed": {
+      "$ref": "informationRateQuantity.json#",
+      "description": "The service's maximum port speed (e.g. 10Mbps, 100Mbps, 1Gbps, 10Gbps).",
+      "title": "Maximum Port Speed"
+    },
+    "interfaceType": {
+      "type": "string",
+      "enum": [
+        "OPTICAL",
+        "ELECTRICAL"
+      ],
+      "description": "The UNI Handoff interface type to connect to the end customer's network (e.g., Electrical).",
+      "title": "Interface Type"
+    },
+    "accessMedium": {
+      "type": "string",
+      "enum": [
+        "FIBER",
+        "COAX",
+        "TWISTED_PAIR"
+      ],
+      "description": "The type of media the service  should delivered over (e.g., Fiber, Coax, Twisted Pair).",
+      "title": "Access Medium"
+    },
+    "enniRequired": {
+      "type": "boolean",
+      "description": "Indicates if a new NNI needs to be established for this service.",
+      "title": "ENNI Required"
+    },
+    "buyerEnniId": {
+      "type": "string",
+      "description": "The circuit identifier that the buyer uses to refer to the existing ENNI that is to be used to support this service.",
+      "title": "Buyer ENNI Identifier"
+    },
+    "enniLocationRequest": {
+      "$ref": "enniLocationRequest.json#",
+      "description": "The location of the ENNI.",
+      "maxLength": 45,
+      "title": "ENNI Location Request"
+    },
+    "classOfService": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ],
+      "description": "The desired Class of Service, as defined by MEF 23.1.",
+      "title": "Class Of Service"
+    },
+    "pricingTerm": {
+      "type": "integer",
+      "description": "The length of the service contract in months.",
+      "minimum": 0,
+      "maximum": 999,
+      "title": "Pricing Term"
+    },
+    "desiredActivationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The desired activation date for the service formatted as  YYYY-MM-DD (eg 1997-07-16) or YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00).",
+      "title": "Desired Activation Date"
+    }
+  }
+}

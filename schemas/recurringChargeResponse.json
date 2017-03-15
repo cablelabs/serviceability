@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "recurringChargeResponse",
+  "id": "recurringChargeResponse",
+  "description": "A charge that is levied repeatedly. An example would be a monthly charge.",
+  "type": "object",
+  "required": [
+    "objectType",
+    "price"
+  ],
+  "properties": {
+    "objectType": {
+      "type": "string",
+      "enum": [
+        "recurringChargeResponse"
+      ],
+      "description": "The type of the object, recurringChargeResponse."
+    },
+    "name": {
+      "type": "string",
+      "enum": [
+        "SERVICE",
+        "EQUIPMENT",
+        "FEATURE"
+      ],
+      "description": "The name of Recurring Charge.",
+      "title": "Name"
+    },
+    "period": {
+      "type": "string",
+      "enum": [
+        "MONTHLY"
+      ],
+      "description": "The frequency for which the price is charged. For example, weekly, monthly, quarterly, yearly.",
+      "title": "Period"
+    },
+    "price": {
+      "$ref": "money.json#",
+      "description": "The amount of money that characterizes the price.",
+      "title": "Price"
+    }
+  }
+}

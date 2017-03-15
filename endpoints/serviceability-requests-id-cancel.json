@@ -1,0 +1,38 @@
+{
+  "/serviceability-requests/{id}/cancel": {
+    "post": {
+      "tags": [
+        "Serviceability"
+      ],
+      "summary": "Cancel a Serviceability Request.",
+      "description": "Cancels a serviceability request that has been submitted. This causes the serviceability request to be canceled and retracted.",
+      "consumes": [
+        "application/json",
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "description": "ID of instance that needs to be fetched.",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK (successful operation).",
+          "schema": {
+            "$ref": "#/definitions/serviceabilityRequest"
+          }
+        },
+        "400": {
+          "description": "Invalid ID supplied."
+        },
+        "404": {
+          "description": "Instance not found."
+        }
+      }
+    }
+  }
+}

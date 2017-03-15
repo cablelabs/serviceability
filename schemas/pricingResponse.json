@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "pricingResponse",
+  "id": "pricingResponse",
+  "description": "A representation of details of a Pricing.",
+  "type": "object",
+  "required": [
+    "objectType"
+  ],
+  "properties": {
+    "objectType": {
+      "type": "string",
+      "enum": [
+        "pricingResponse"
+      ],
+      "description": "The type of the object, pricingResponse."
+    },
+    "pricingTerm": {
+      "type": "integer",
+      "description": "The length of the service contract in months.",
+      "minimum": 0,
+      "maximum": 999,
+      "title": "Pricing Term"
+    },
+    "oneTimeCharges": {
+      "type": "array",
+      "items": {
+        "$ref": "oneTimeChargeResponse.json#"
+      },
+      "description": "An array of One Time Charge on Pricing.",
+      "title": "One Time Charge"
+    },
+    "recurringCharges": {
+      "type": "array",
+      "items": {
+        "$ref": "recurringChargeResponse.json#"
+      },
+      "description": "An array of Recurring Charge on Pricing.",
+      "title": "Recurring Charge"
+    }
+  }
+}

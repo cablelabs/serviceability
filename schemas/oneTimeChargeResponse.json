@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "oneTimeChargeResponse",
+  "id": "oneTimeChargeResponse",
+  "description": "An one-time charge is levied once. An example is an activation fee.",
+  "type": "object",
+  "required": [
+    "objectType",
+    "price"
+  ],
+  "properties": {
+    "objectType": {
+      "type": "string",
+      "enum": [
+        "oneTimeChargeResponse"
+      ],
+      "description": "The type of the object, oneTimeChargeResponse."
+    },
+    "name": {
+      "type": "string",
+      "enum": [
+        "CONSTRUCTION",
+        "SERVICE",
+        "EQUIPMENT",
+        "FEATURE"
+      ],
+      "description": "The name the One-Time Charge is known by (e.g., Activation Fee).",
+      "title": "Name"
+    },
+    "price": {
+      "$ref": "money.json#",
+      "description": "The amount of money that characterizes the price.",
+      "title": "Price"
+    }
+  }
+}
