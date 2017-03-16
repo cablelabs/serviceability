@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "serviceDetailResponse",
+  "id": "serviceDetailResponse",
+  "description": "A collection of details of a service. These details are used for Serviceability Responses and Service Sites.",
+  "type": "object",
+  "required": [
+      "objectType",
+      "productSpecs"
+  ],
+  "properties": {
+    "objectType": {
+      "type": "string",
+      "enum": [
+          "serviceDetailResponse"
+      ],
+      "description": "The type of the object, serviceDetailResponse."
+    },
+    "productSpecs": {
+      "type": "array",
+      "items": {
+        "$ref": "productSpecResponse.json#"
+      },
+      "description": "An array of productSpecResponse.",
+      "title": "Product Specification"
+    }
+  }
+}

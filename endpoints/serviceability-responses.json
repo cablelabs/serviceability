@@ -1,0 +1,77 @@
+{
+  "/serviceability-responses": {
+    "get": {
+      "tags": [
+        "Serviceability"
+      ],
+      "summary": "Fetch all Serviceability Responses that meet the query criteria.",
+      "description": "This service fetches all Serviceability Responses that match the query criteria.",
+      "displayName": "Serviceability Responses",
+      "produces": [
+        "application/json",
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "in": "query",
+          "name": "query",
+          "description": "Query criteria for filtering Serviceability Responses.",
+          "required": false,
+          "type": "string",
+          "format": "string"
+        },
+        {
+          "in": "query",
+          "name": "view",
+          "description": "View of the resource that you want to get.",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK (successful operation). NOTE: The list may be empty.",
+          "schema": {
+            "$ref": "#/definitions/serviceabilityResponseList"
+          }
+        },
+        "400": {
+          "description": "Invalid ID supplied."
+        },
+        "404": {
+          "description": "Instance not found."
+        }
+      }
+    },
+    "post": {
+      "tags": [
+        "Serviceability"
+      ],
+      "summary": "Create a new Serviceability Response.",
+      "description": "This service creates a new Serviceability Response.",
+      "consumes": [
+        "application/json",
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "in": "body",
+          "name": "body",
+          "description": "",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/serviceabilityResponse-create-update"
+          }
+        }
+      ],
+      "responses": {
+        "201": {
+          "description": "Instance created."
+        },
+        "405": {
+          "description": "Invalid input."
+        }
+      }
+    }
+  }
+}

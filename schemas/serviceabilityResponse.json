@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "serviceabilityResponse",
+  "id": "serviceabilityResponse",
+  "description": "A response provided by an organization (Seller) to a Serviceability Request made by another organization (Buyer). This Serviceability Response is for a single location.",
+  "type": "object",
+  "required": [
+      "objectType",
+      "id",
+      "serviceabilityRequestId",
+      "buyerId",
+      "sellerId",
+      "serviceSite",
+      "serviceabilityConfidence",
+      "serviceDetails"
+  ],
+  "properties": {
+    "objectType": {
+      "type": "string",
+      "enum": [
+          "serviceabilityResponse"
+      ],
+      "description": "The type of the object, serviceabilityResponse."
+    },
+    "id": {
+      "type": "string",
+      "description": "The Serviceability Response's unique identifier.",
+      "maxLength": 15,
+      "title": "Unique Identifier"
+    },
+    "link": {
+      "$ref": "link.json#",
+      "description": "The Serviceability Response's self link.",
+      "title": "Self URL Link"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "UNDER_REVIEW",
+        "SUBMITTED",
+        "ACCEPTED",
+        "COMPLETE",
+        "REJECTED"
+      ],
+      "description": "The states used to convey Serviceability Request Status.",
+      "title": "Status"
+    },
+    "serviceabilityRequestId": {
+      "type": "string",
+      "description": "The id of the associated Serviceability Request.",
+      "maxLength": 15,
+      "title": "Serviceability Request"
+    },
+    "buyerId": {
+      "type": "string",
+      "description": "A Party Role played by an Individual or an Organization that buys products and services from a Seller. Specifically, the ID of the Service Provider (Buyer) organization placing the serviceability request.",
+      "maxLength": 25,
+      "title": "Buyer"
+    },
+    "sellerId": {
+      "type": "string",
+      "description": "An organization that provides products and services to a buyer. Specifically, the ID of the Partner/Access Provider (Seller) organization receiving the serviceability request.",
+      "maxLength": 25,
+      "title": "Seller"
+    },
+    "mpoeOnly": {
+      "type": "boolean",
+      "description": "Indicates if access to the location is currenly Minimum Point Of Entry (MPOE) only. If mpoeOnly is true, this indicates that full access to the location (e.g. sub-unit or suite) has not yet been established. If mpoeOnly is false or not defined, this indicates that full access to the location has been (or will be) established.",
+      "title": "Minimum Point Of Entry Only"
+    },
+    "expirationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date the Serviceability Response expires, formatted as  YYYY-MM-DD (eg 1997-07-16) or YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00).",
+      "title": "Experation Date"
+    },
+    "serviceSite": {
+      "$ref": "serviceSiteInformation.json#",
+      "description": "The service site information for the serviceability request.",
+      "title": "Service Site"
+    },
+    "serviceabilityConfidence": {
+      "$ref": "serviceabilityConfidence.json#",
+      "description": "Serviceability confidence from seller for this request.",
+      "title": "Serviceability Confidence"
+    },
+    "installationInterval": {
+      "type": "integer",
+      "description": "An estimate of the number of calendar days until the desired service could be activated.",
+      "minimum": 0,
+      "maximum": 999,
+      "title": "Installation Interval"
+    },
+    "serviceDetails": {
+      "type": "array",
+      "items": {
+        "$ref": "serviceDetailResponse.json#"
+      },
+      "description": "Details of the service capabilities at the service location.",
+      "title": "Service Details"
+    }
+  }
+}
