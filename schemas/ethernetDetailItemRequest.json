@@ -44,7 +44,7 @@
       "description": "The type of media the service  should delivered over (e.g., Fiber, Coax, Twisted Pair).",
       "title": "Access Medium"
     },
-    "enniRequired": {
+    "newEnniRequired": {
       "type": "boolean",
       "description": "Indicates if a new NNI needs to be established for this service.",
       "title": "ENNI Required"

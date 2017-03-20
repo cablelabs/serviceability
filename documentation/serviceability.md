@@ -4,7 +4,7 @@ This repository contains an example Serviceability API that meets the business r
 
 ## API
 
-The Order API is described in [Serviceability API](serviceability-api.md).
+The Serviceability API is described in [Serviceability API](serviceability-api.md).
 
 
 ## Additional Documentation

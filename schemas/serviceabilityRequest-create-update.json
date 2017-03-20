@@ -1,16 +1,24 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "serviceabilityRequest-create-update",
+  "title": "c",
   "id": "serviceabilityRequest-create-update",
   "description": "A request by an organization (buyer) to  another ogranization (seller) to determine Serviceability at a specific location. This schema should used for CREATE and UPDATE operations.",
   "type": "object",
   "required": [
+      "objectType",
       "buyerId",
       "sellerId",
       "serviceSite",
       "serviceDetails"
   ],
   "properties": {
+    "objectType": {
+        "type": "string",
+        "enum": [
+            "serviceabilityRequest-create-update"
+        ],
+        "description": "The type of the object, serviceabilityRequest-create-update."
+    },
     "buyerId": {
       "type": "string",
       "description": "A Party Role played by an Individual or an Organization that buys products and services from a Seller. Specifically, the ID of the Service Provider (Buyer) organization placing the serviceability request.",
