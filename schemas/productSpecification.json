@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "productSpecResponse",
-  "id": "productSpecResponse",
+  "title": "productSpecification",
+  "id": "productSpecification",
   "description": "Details of a Product Specification response. These details are used for Serviceability Responses.",
   "type": "object",
   "required": [
@@ -12,9 +12,9 @@
     "objectType": {
       "type": "string",
       "enum": [
-        "productSpecResponse"
+        "productSpecification"
       ],
-      "description": "The type of the object, productSpecResponse."
+      "description": "The type of the object, productSpecification."
     },
     "id": {
       "type": "string",
