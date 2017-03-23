@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "ethernetDetailItemRequest",
-  "id": "ethernetDetailItemRequest",
+  "title": "ethernetServiceDetail",
+  "id": "ethernetServiceDetail",
   "description": "Details of an ethernet service. These details are used for Serviceability Requests.",
   "type": "object",
   "required": [
@@ -11,9 +11,26 @@
     "objectType": {
       "type": "string",
       "enum": [
-          "ethernetDetailItemRequest"
+          "ethernetServiceDetail"
       ],
-      "description": "The type of the object, ethernetDetailItemRequest."
+      "description": "The type of the object, ethernetServiceDetail."
+    },
+    "serviceCategory": {
+      "type": "string",
+      "enum": [
+        "ETHERNET"
+      ],
+      "description": "A high-level categorization of products such as Ethernet.",
+      "title": "Service Category"
+    },
+    "serviceType": {
+      "type": "string",
+      "enum": [
+        "ACCESS_EPL",
+        "UNI"
+      ],
+      "description": "The specific type of product being detailed (e.g. ACCESS_EPL).",
+      "title": "Service Type"
     },
     "bandwidth": {
       "$ref": "informationRateQuantity.json#",
@@ -54,8 +71,8 @@
       "description": "The circuit identifier that the buyer uses to refer to the existing ENNI that is to be used to support this service.",
       "title": "Buyer ENNI Identifier"
     },
-    "enniLocationRequest": {
-      "$ref": "enniLocationRequest.json#",
+    "enniLocation": {
+      "$ref": "enniLocation.json#",
       "description": "The location of the ENNI.",
       "maxLength": 45,
       "title": "ENNI Location Request"

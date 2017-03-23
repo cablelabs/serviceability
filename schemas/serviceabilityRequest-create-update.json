@@ -31,17 +31,6 @@
       "maxLength": 25,
       "title": "Seller Id"
     },
-    "status": {
-      "type": "string",
-      "enum": [
-        "SUBMITTED",
-        "COMPLETED",
-        "FAILED",
-        "CANCELLED"
-      ],
-      "description": "The states used to convey Serviceability Request Status.",
-      "title": "Status"
-    },
     "projectId": {
       "type": "string",
       "description": "An identifier that is used to group Orders that represent a unit of functionality that is important to a Buyer. A Project can be used to relate multiple Orders together.",

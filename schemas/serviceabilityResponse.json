@@ -36,15 +36,19 @@
     "status": {
       "type": "string",
       "enum": [
-        "DRAFT",
         "UNDER_REVIEW",
-        "SUBMITTED",
         "ACCEPTED",
         "COMPLETE",
         "REJECTED"
       ],
       "description": "The states used to convey Serviceability Request Status.",
       "title": "Status"
+    },
+    "projectId": {
+      "type": "string",
+      "description": "An identifier that is used to group Orders that represent a unit of functionality that is important to a Buyer. A Project can be used to relate multiple Orders together.",
+      "maxLength": 16,
+      "title": "Project Id"
     },
     "serviceabilityRequestId": {
       "type": "string",
@@ -80,7 +84,7 @@
       "description": "The service site information for the serviceability request.",
       "title": "Service Site"
     },
-    "serviceabilityConfidence": {
+    "confidence": {
       "$ref": "serviceabilityConfidence.json#",
       "description": "Serviceability confidence from seller for this request.",
       "title": "Serviceability Confidence"
@@ -92,13 +96,15 @@
       "maximum": 999,
       "title": "Installation Interval"
     },
-    "serviceDetails": {
-      "type": "array",
-      "items": {
-        "$ref": "serviceDetailResponse.json#"
-      },
-      "description": "Details of the service capabilities at the service location.",
-      "title": "Service Details"
-    }
+    "productSpecifications": [
+      {
+        "type": "array",
+        "items": {
+          "$ref": "productSpecification.json#"
+        },
+        "description": "Details of the product specifications and associated pricing (offerings) returned with the response.",
+        "title": "Service Details"
+      }
+    ]
   }
 }

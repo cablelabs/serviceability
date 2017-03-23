@@ -35,11 +35,12 @@ Status: 200 OK
       },
       "buyerId": "Comcast",
       "sellerId": "Cox",
-      "status": "Submitted",
+      "status": "SUBMITTED",
       "projectId": "PRJ-CC-12345678",
       "pricingMethod": "CONTRACT",
       "pricingReference": "CC-MES-0192",
-      "serviceSite" :{
+      "serviceSite" : {
+        "objectType": "serviceSiteInformation",
         "siteAddressType": "FORMATTED_ADDRESS",
         "siteAddress": {
           "addressLine1": "5630 E SANTA ANA CANYON RD",
@@ -63,34 +64,29 @@ Status: 200 OK
         "telephoneNumber": "7147651026",
         "email": "b_buckminster@libertyproperty.com"
       },
+      "desiredResponseDate": "2016-09-26T12:00:00.333Z",
       "serviceDetail": {
         "objectType": "ethernetServiceDetail",
         "serviceCategory": "ETHERNET",
         "serviceType": "ACCESS_EPL",
-        "serviceDetailItems": [
-          {
-            "objectType": "ethernetDetailItemRequest",
-            "bandwidth": {
-              "objectType": "informationRateQuantity",
-              "amount": 100,
-              "quantity": "Mbps"
-            },
-            "maxPortSpeed": {
-              "objectType": "informationRateQuantity",
-              "amount": 1,
-              "quantity": "Gbps"
-            },
-            "interfaceType": "OPTICAL",
-            "accessMedium": "FIBER",
-            "newEnniRequired": false,
-            "buyerEnniId": "CC-ENNI-12345678",
-            "classOfService": "HIGH",
-            "pricingTerm": "24",
-            "desiredActivationDate": "2016-10-26T12:00:00.333Z"
-          }
-        ]
-      },
-      "desiredResponseDate": "2016-09-26T12:00:00.333Z"
+        "bandwidth": {
+          "objectType": "informationRateQuantity",
+          "amount": 100,
+          "quantity": "Mbps"
+        },
+        "maxPortSpeed": {
+          "objectType": "informationRateQuantity",
+          "amount": 1,
+          "quantity": "Gbps"
+        },
+        "interfaceType": "OPTICAL",
+        "accessMedium": "FIBER",
+        "newEnniRequired": false,
+        "buyerEnniId": "CC-ENNI-12345678",
+        "classOfService": "HIGH",
+        "pricingTerm": "24",
+        "desiredActivationDate": "2016-10-26T12:00:00.333Z"
+      }
     }
   ]
 }
@@ -113,11 +109,12 @@ Status: 200 OK
   },
   "buyerId": "Comcast",
   "sellerId": "Cox",
-  "status": "Submitted",
+  "status": "SUBMITTED",
   "projectId": "PRJ-CC-12345678",
   "pricingMethod": "CONTRACT",
   "pricingReference": "CC-MES-0192",
-  "serviceSite" :{
+  "serviceSite" : {
+    "objectType": "serviceSiteInformation",
     "siteAddressType": "FORMATTED_ADDRESS",
     "siteAddress": {
       "addressLine1": "5630 E SANTA ANA CANYON RD",
@@ -141,34 +138,29 @@ Status: 200 OK
     "telephoneNumber": "7147651026",
     "email": "b_buckminster@libertyproperty.com"
   },
+  "desiredResponseDate": "2016-09-26T12:00:00.333Z",
   "serviceDetail": {
     "objectType": "ethernetServiceDetail",
     "serviceCategory": "ETHERNET",
     "serviceType": "ACCESS_EPL",
-    "serviceDetailItems": [
-      {
-        "objectType": "ethernetDetailItemRequest",
-        "bandwidth": {
-          "objectType": "informationRateQuantity",
-          "amount": 100,
-          "quantity": "Mbps"
-        },
-        "maxPortSpeed": {
-          "objectType": "informationRateQuantity",
-          "amount": 1,
-          "quantity": "Gbps"
-        },
-        "interfaceType": "OPTICAL",
-        "accessMedium": "FIBER",
-        "newEnniRequired": false,
-        "buyerEnniId": "CC-ENNI-12345678",
-        "classOfService": "HIGH",
-        "pricingTerm": "24",
-        "desiredActivationDate": "2016-10-26T12:00:00.333Z"
-      }
-    ]
-  },
-  "desiredResponseDate": "2016-09-26T12:00:00.333Z"
+    "bandwidth": {
+      "objectType": "informationRateQuantity",
+      "amount": 100,
+      "quantity": "Mbps"
+    },
+    "maxPortSpeed": {
+      "objectType": "informationRateQuantity",
+      "amount": 1,
+      "quantity": "Gbps"
+    },
+    "interfaceType": "OPTICAL",
+    "accessMedium": "FIBER",
+    "newEnniRequired": false,
+    "buyerEnniId": "CC-ENNI-12345678",
+    "classOfService": "HIGH",
+    "pricingTerm": "24",
+    "desiredActivationDate": "2016-10-26T12:00:00.333Z"
+  }
 }
 ```
 
@@ -185,11 +177,11 @@ POST /serviceability-requests
   "objectType": "serviceabilityRequest-create-update",
   "buyerId": "Comcast",
   "sellerId": "Cox",
-  "status": "Submitted",
   "projectId": "PRJ-CC-12345678",
   "pricingMethod": "CONTRACT",
   "pricingReference": "CC-MES-0192",
-  "serviceSite" :{
+  "serviceSite" : {
+    "objectType": "serviceSiteInformation",
     "siteAddressType": "FORMATTED_ADDRESS",
     "siteAddress": {
       "addressLine1": "5630 E SANTA ANA CANYON RD",
@@ -207,34 +199,35 @@ POST /serviceability-requests
     "telephoneNumber": "6574459867",
     "email": "f_fullerton@libertyproperty.com"
   },
+  "alternateSiteContact": {
+    "objectType": "contact",
+    "name": "Betty Buckminster",
+    "telephoneNumber": "7147651026",
+    "email": "b_buckminster@libertyproperty.com"
+  },
+  "desiredResponseDate": "2016-09-26T12:00:00.333Z",
   "serviceDetail": {
     "objectType": "ethernetServiceDetail",
     "serviceCategory": "ETHERNET",
     "serviceType": "ACCESS_EPL",
-    "serviceDetailItems": [
-      {
-        "objectType": "ethernetDetailItemRequest",
-        "bandwidth": {
-          "objectType": "informationRateQuantity",
-          "amount": 100,
-          "quantity": "Mbps"
-        },
-        "maxPortSpeed": {
-          "objectType": "informationRateQuantity",
-          "amount": 1,
-          "quantity": "Gbps"
-        },
-        "interfaceType": "OPTICAL",
-        "accessMedium": "FIBER",
-        "newEnniRequired": false,
-        "buyerEnniId": "CC-ENNI-12345678",
-        "classOfService": "HIGH",
-        "pricingTerm": "24",
-        "desiredActivationDate": "2016-10-26T12:00:00.333Z"
-      }
-    ]
-  },
-  "desiredResponseDate": "2016-09-26T12:00:00.333Z"
+    "bandwidth": {
+      "objectType": "informationRateQuantity",
+      "amount": 100,
+      "quantity": "Mbps"
+    },
+    "maxPortSpeed": {
+      "objectType": "informationRateQuantity",
+      "amount": 1,
+      "quantity": "Gbps"
+    },
+    "interfaceType": "OPTICAL",
+    "accessMedium": "FIBER",
+    "newEnniRequired": false,
+    "buyerEnniId": "CC-ENNI-12345678",
+    "classOfService": "HIGH",
+    "pricingTerm": "24",
+    "desiredActivationDate": "2016-10-26T12:00:00.333Z"
+  }
 }
 ```
 
@@ -243,18 +236,19 @@ POST /serviceability-requests
 Status: 201 Created
 ```JSON
 {
-  "objectType": "serviceabilityRequest-create-update",
+  "objectType": "serviceabilityRequest",
   "id": "SRQ-CC-13043135",
   "link": {
     "href": "/api/serviceability-requests/SRQ-CC-13043135"
   },
   "buyerId": "Comcast",
   "sellerId": "Cox",
-  "status": "Submitted",
+  "status": "SUBMITTED",
   "projectId": "PRJ-CC-12345678",
   "pricingMethod": "CONTRACT",
   "pricingReference": "CC-MES-0192",
-  "serviceSite" :{
+  "serviceSite" : {
+    "objectType": "serviceSiteInformation",
     "siteAddressType": "FORMATTED_ADDRESS",
     "siteAddress": {
       "addressLine1": "5630 E SANTA ANA CANYON RD",
@@ -272,34 +266,35 @@ Status: 201 Created
     "telephoneNumber": "6574459867",
     "email": "f_fullerton@libertyproperty.com"
   },
+  "alternateSiteContact": {
+    "objectType": "contact",
+    "name": "Betty Buckminster",
+    "telephoneNumber": "7147651026",
+    "email": "b_buckminster@libertyproperty.com"
+  },
+  "desiredResponseDate": "2016-09-26T12:00:00.333Z",
   "serviceDetail": {
     "objectType": "ethernetServiceDetail",
     "serviceCategory": "ETHERNET",
     "serviceType": "ACCESS_EPL",
-    "serviceDetailItems": [
-      {
-        "objectType": "ethernetDetailItemRequest",
-        "bandwidth": {
-          "objectType": "informationRateQuantity",
-          "amount": 100,
-          "quantity": "Mbps"
-        },
-        "maxPortSpeed": {
-          "objectType": "informationRateQuantity",
-          "amount": 1,
-          "quantity": "Gbps"
-        },
-        "interfaceType": "OPTICAL",
-        "accessMedium": "FIBER",
-        "newEnniRequired": false,
-        "buyerEnniId": "CC-ENNI-12345678",
-        "classOfService": "HIGH",
-        "pricingTerm": "24",
-        "desiredActivationDate": "2016-10-26T12:00:00.333Z"
-      }
-    ]
-  },
-  "desiredResponseDate": "2016-09-26T12:00:00.333Z"
+    "bandwidth": {
+      "objectType": "informationRateQuantity",
+      "amount": 100,
+      "quantity": "Mbps"
+    },
+    "maxPortSpeed": {
+      "objectType": "informationRateQuantity",
+      "amount": 1,
+      "quantity": "Gbps"
+    },
+    "interfaceType": "OPTICAL",
+    "accessMedium": "FIBER",
+    "newEnniRequired": false,
+    "buyerEnniId": "CC-ENNI-12345678",
+    "classOfService": "HIGH",
+    "pricingTerm": "24",
+    "desiredActivationDate": "2016-10-26T12:00:00.333Z"
+  }
 }
 ```
 
@@ -316,11 +311,11 @@ PUT /serviceability-requests/SRQ-CC-13043135
   "objectType": "serviceabilityRequest-create-update",
   "buyerId": "Comcast",
   "sellerId": "Cox",
-  "status": "Submitted",
   "projectId": "PRJ-CC-12345678",
   "pricingMethod": "CONTRACT",
   "pricingReference": "CC-MES-0192",
-  "serviceSite" :{
+  "serviceSite" : {
+    "objectType": "serviceSiteInformation",
     "siteAddressType": "FORMATTED_ADDRESS",
     "siteAddress": {
       "addressLine1": "5630 E SANTA ANA CANYON RD",
@@ -334,38 +329,39 @@ PUT /serviceability-requests/SRQ-CC-13043135
   },
   "primarySiteContact": {
     "objectType": "contact",
-    "name": "Jessie McBride",
-    "telephoneNumber": "6578885102",
-    "email": "j_mcbride@libertyproperty.com"
+    "name": "Frederick Fullerton",
+    "telephoneNumber": "6574459867",
+    "email": "f_fullerton@libertyproperty.com"
   },
+  "alternateSiteContact": {
+    "objectType": "contact",
+    "name": "Betty Buckminster",
+    "telephoneNumber": "7147651026",
+    "email": "b_buckminster@libertyproperty.com"
+  },
+  "desiredResponseDate": "2016-09-26T12:00:00.333Z",
   "serviceDetail": {
     "objectType": "ethernetServiceDetail",
     "serviceCategory": "ETHERNET",
     "serviceType": "ACCESS_EPL",
-    "serviceDetailItems": [
-      {
-        "objectType": "ethernetDetailItemRequest",
-        "bandwidth": {
-          "objectType": "informationRateQuantity",
-          "amount": 1,
-          "quantity": "Gbps"
-        },
-        "maxPortSpeed": {
-          "objectType": "informationRateQuantity",
-          "amount": 1,
-          "quantity": "Gbps"
-        },
-        "interfaceType": "OPTICAL",
-        "accessMedium": "FIBER",
-        "newEnniRequired": false,
-        "buyerEnniId": "CC-ENNI-12345678",
-        "classOfService": "HIGH",
-        "pricingTerm": "12",
-        "desiredActivationDate": "2016-10-26T12:00:00.333Z"
-      }
-    ]
-  },
-  "desiredResponseDate": "2016-09-26T12:00:00.333Z"
+    "bandwidth": {
+      "objectType": "informationRateQuantity",
+      "amount": 100,
+      "quantity": "Mbps"
+    },
+    "maxPortSpeed": {
+      "objectType": "informationRateQuantity",
+      "amount": 1,
+      "quantity": "Gbps"
+    },
+    "interfaceType": "OPTICAL",
+    "accessMedium": "FIBER",
+    "newEnniRequired": false,
+    "buyerEnniId": "CC-ENNI-12345678",
+    "classOfService": "HIGH",
+    "pricingTerm": "24",
+    "desiredActivationDate": "2016-10-26T12:00:00.333Z"
+  }
 }
 ```
 
@@ -374,18 +370,19 @@ PUT /serviceability-requests/SRQ-CC-13043135
 Status: 200 OK
 ```JSON
 {
-  "objectType": "serviceabilityRequest-create-update",
+  "objectType": "serviceabilityRequest",
   "id": "SRQ-CC-13043135",
   "link": {
     "href": "/api/serviceability-requests/SRQ-CC-13043135"
   },
   "buyerId": "Comcast",
   "sellerId": "Cox",
-  "status": "Submitted",
+  "status": "SUBMITTED",
   "projectId": "PRJ-CC-12345678",
   "pricingMethod": "CONTRACT",
   "pricingReference": "CC-MES-0192",
-  "serviceSite" :{
+  "serviceSite" : {
+    "objectType": "serviceSiteInformation",
     "siteAddressType": "FORMATTED_ADDRESS",
     "siteAddress": {
       "addressLine1": "5630 E SANTA ANA CANYON RD",
@@ -399,38 +396,39 @@ Status: 200 OK
   },
   "primarySiteContact": {
     "objectType": "contact",
-    "name": "Jessie McBride",
-    "telephoneNumber": "6578885102",
-    "email": "j_mcbride@libertyproperty.com"
+    "name": "Frederick Fullerton",
+    "telephoneNumber": "6574459867",
+    "email": "f_fullerton@libertyproperty.com"
   },
+  "alternateSiteContact": {
+    "objectType": "contact",
+    "name": "Betty Buckminster",
+    "telephoneNumber": "7147651026",
+    "email": "b_buckminster@libertyproperty.com"
+  },
+  "desiredResponseDate": "2016-09-26T12:00:00.333Z",
   "serviceDetail": {
     "objectType": "ethernetServiceDetail",
     "serviceCategory": "ETHERNET",
     "serviceType": "ACCESS_EPL",
-    "serviceDetailItems": [
-      {
-        "objectType": "ethernetDetailItemRequest",
-        "bandwidth": {
-          "objectType": "informationRateQuantity",
-          "amount": 1,
-          "quantity": "Gbps"
-        },
-        "maxPortSpeed": {
-          "objectType": "informationRateQuantity",
-          "amount": 1,
-          "quantity": "Gbps"
-        },
-        "interfaceType": "OPTICAL",
-        "accessMedium": "FIBER",
-        "newEnniRequired": false,
-        "buyerEnniId": "CC-ENNI-12345678",
-        "classOfService": "HIGH",
-        "pricingTerm": "12",
-        "desiredActivationDate": "2016-10-26T12:00:00.333Z"
-      }
-    ]
-  },
-  "desiredResponseDate": "2016-09-26T12:00:00.333Z"
+    "bandwidth": {
+      "objectType": "informationRateQuantity",
+      "amount": 100,
+      "quantity": "Mbps"
+    },
+    "maxPortSpeed": {
+      "objectType": "informationRateQuantity",
+      "amount": 1,
+      "quantity": "Gbps"
+    },
+    "interfaceType": "OPTICAL",
+    "accessMedium": "FIBER",
+    "newEnniRequired": false,
+    "buyerEnniId": "CC-ENNI-12345678",
+    "classOfService": "HIGH",
+    "pricingTerm": "24",
+    "desiredActivationDate": "2016-10-26T12:00:00.333Z"
+  }
 }
 ```
 

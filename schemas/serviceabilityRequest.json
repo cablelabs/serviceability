@@ -97,11 +97,8 @@
       "description": "The desired date for a response to the serviceability request formatted as  YYYY-MM-DD (eg 1997-07-16) or YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00).",
       "title": "Desired Response Date"
     },
-    "serviceDetails": {
-      "type": "array",
-      "items": {
-        "$ref": "serviceDetailRequest.json#"
-      },
+    "serviceDetail": {
+      "$ref": "ethernetServiceDetail.json#",
       "description": "Details of the service capabilities being requested.",
       "title": "Service Details"
     }
