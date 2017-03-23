@@ -1,4 +1,4 @@
-## Serviceability Requests
+## Serviceability Responses
 
 **Endpoint Summary**
 
