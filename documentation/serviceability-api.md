@@ -6,4 +6,4 @@ Serviceability provides an API to help determine if a particular service is avai
 
 The Endpoint Summary table describes each Serviceability API endpoint. Following the table is an example of each action at each endpoint, including sample request and response payloads.
 
-Serviceability API is divided into a [Serviceability Request API](serviceability-request-api.md) and a [Serviceability Response  API](serviceability-Response-api.md)
+Serviceability API is divided into a [Serviceability Request API](serviceability-request-api.md) and a [Serviceability Response  API](serviceability-response-api.md)
