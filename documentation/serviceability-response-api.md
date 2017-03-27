@@ -12,7 +12,6 @@
 | Remove an existing Serviceability Response based on the ID provided in query string | DELETE /serviceability-responses/{id} |
 | Cancel a Serviceability Response | POST /serviceability-responses/{id}/cancel |
 
-**Endpoint Descriptions and Examples**
 
 ### List all Serviceability responses
 
