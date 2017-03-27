@@ -22,25 +22,21 @@
     "id": {
       "type": "string",
       "description": "The Serviceability Request's unique identifier.",
-      "maxLength": 15,
-      "title": "Unique Identifier"
+      "maxLength": 15
     },
     "link": {
       "$ref": "link.json#",
-      "description": "The Serviceability Request's self link.",
-      "title": "Self URL Link"
+      "description": "The Serviceability Request's self link."
     },
     "buyerId": {
       "type": "string",
       "description": "A Party Role played by an Individual or an Organization that buys products and services from a Seller. Specifically, the ID of the Service Provider (Buyer) organization placing the serviceability request.",
-      "maxLength": 25,
-      "title": "Buyer Id"
+      "maxLength": 25
     },
     "sellerId": {
       "type": "string",
       "description": "An organization that provides products and services to a buyer. Specifically, the ID of the Partner/Access Provider (Seller) organization receiving the serviceability request.",
-      "maxLength": 25,
-      "title": "Seller Id"
+      "maxLength": 25
     },
     "status": {
       "type": "string",
@@ -50,14 +46,12 @@
         "FAILED",
         "CANCELLED"
       ],
-      "description": "The states used to convey Serviceability Request Status.",
-      "title": "Status"
+      "description": "The states used to convey Serviceability Request Status."
     },
     "projectId": {
       "type": "string",
       "description": "An identifier that is used to group Orders that represent a unit of functionality that is important to a Buyer. A Project can be used to relate multiple Orders together.",
-      "maxLength": 16,
-      "title": "Project Id"
+      "maxLength": 16
     },
     "pricingMethod": {
       "type": "string",
@@ -67,40 +61,33 @@
         "ICB",
         "OTHER"
       ],
-      "description": "The pricing authority to be used to price the service details on this serviceability request. Choice of Tariff, Contract, Individual Case Basis (ICB), Other.",
-      "title": "Pricing Method"
+      "description": "The pricing authority to be used to price the service details on this serviceability request. Choice of Tariff, Contract, Individual Case Basis (ICB), Other."
     },
     "pricingReference": {
       "type": "string",
       "description": "The value associated with the Pricing Method selected (e.g. a contract or tariff id).",
-      "maxLength": 25,
-      "title": "Pricing Reference"
+      "maxLength": 25
     },
     "serviceSite": {
       "$ref": "serviceSiteInformation.json#",
-      "description": "The service site information for the serviceability request.",
-      "title": "Service Site"
+      "description": "The service site information for the serviceability request."
     },
     "primarySiteContact": {
       "$ref": "contact.json#",
-      "description": "The primary site contact for the serviceability request.",
-      "title": "Service Site"
+      "description": "The primary site contact for the serviceability request."
     },
     "alternateSiteContact": {
       "$ref": "contact.json#",
-      "description": "The secondary site contact for the serviceability request.",
-      "title": "Service Site"
+      "description": "The secondary site contact for the serviceability request."
     },
     "desiredResponseDate": {
       "type": "string",
       "format": "date-time",
-      "description": "The desired date for a response to the serviceability request formatted as  YYYY-MM-DD (eg 1997-07-16) or YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00).",
-      "title": "Desired Response Date"
+      "description": "The desired date for a response to the serviceability request formatted as  YYYY-MM-DD (eg 1997-07-16) or YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00)."
     },
     "serviceDetail": {
       "$ref": "ethernetServiceDetail.json#",
-      "description": "Details of the service capabilities being requested.",
-      "title": "Service Details"
+      "description": "Details of the service capabilities being requested."
     }
   }
 }

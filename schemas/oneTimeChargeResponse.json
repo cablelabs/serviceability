@@ -24,13 +24,11 @@
         "EQUIPMENT",
         "FEATURE"
       ],
-      "description": "The name the One-Time Charge is known by (e.g., Activation Fee).",
-      "title": "Name"
+      "description": "The name the One-Time Charge is known by (e.g., Activation Fee)."
     },
     "price": {
       "$ref": "money.json#",
-      "description": "The amount of money that characterizes the price.",
-      "title": "Price"
+      "description": "The amount of money that characterizes the price."
     }
   }
 }

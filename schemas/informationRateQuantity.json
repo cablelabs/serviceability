@@ -5,7 +5,9 @@
     "description": "A quantity to be used for specifying information rates.",
     "type": "object",
     "required": [
-        "objectType"
+        "objectType",
+        "amount",
+        "units"
     ],
     "properties": {
         "objectType": {
@@ -17,17 +19,15 @@
         },
         "amount": {
           "type": "number",
-          "required": true,
-          "title": "Amount"
+          "description": "A quantity of something. Typically size, value, extent, or money."
         },
         "units": {
           "type": "string",
-          "required": true,
           "enum": [
             "Mbps",
             "Gbps"
           ],
-          "title": "Units"
+          "description": "The unit of measure for the quantity."
         }
     }
 }

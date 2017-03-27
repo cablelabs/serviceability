@@ -18,22 +18,11 @@
     "id": {
       "type": "string",
       "description": "Unique identifier for the UNI Product Specification Detail.",
-      "maxLength": 15,
-      "title": "Unique Identifier"
-    },
-    "type": {
-      "type": "string",
-      "enum": [
-        "ACCESS_EPL",
-        "ACCESS_EVPL"
-      ],
-      "description": "The specific type of product being detailed (e.g. ACCESS_EPL).",
-      "title": "Type"
+      "maxLength": 15
     },
     "portSpeed": {
       "$ref": "informationRateQuantity.json#",
-      "description": "The speed of the port (in bits/s).",
-      "title": "Port Speed"
+      "description": "The speed of the port (in bits/s)."
     }
   }
 }

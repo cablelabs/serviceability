@@ -23,21 +23,18 @@
         "EQUIPMENT",
         "FEATURE"
       ],
-      "description": "The name of Recurring Charge.",
-      "title": "Name"
+      "description": "The name of Recurring Charge."
     },
     "period": {
       "type": "string",
       "enum": [
         "MONTHLY"
       ],
-      "description": "The frequency for which the price is charged. For example, weekly, monthly, quarterly, yearly.",
-      "title": "Period"
+      "description": "The frequency for which the price is charged. For example, weekly, monthly, quarterly, yearly."
     },
     "price": {
       "$ref": "money.json#",
-      "description": "The amount of money that characterizes the price.",
-      "title": "Price"
+      "description": "The amount of money that characterizes the price
     }
   }
 }

@@ -20,8 +20,7 @@
       "enum": [
         "ETHERNET"
       ],
-      "description": "A high-level categorization of products such as Ethernet.",
-      "title": "Service Category"
+      "description": "A high-level categorization of products such as Ethernet."
     },
     "serviceType": {
       "type": "string",
@@ -29,18 +28,15 @@
         "ACCESS_EPL",
         "UNI"
       ],
-      "description": "The specific type of product being detailed (e.g. ACCESS_EPL).",
-      "title": "Service Type"
+      "description": "The specific type of product being detailed (e.g. ACCESS_EPL)."
     },
     "bandwidth": {
       "$ref": "informationRateQuantity.json#",
-      "description": "The service's bandwidth (e.g. 10Mbps, 100Mbps, 1Gbps, 10Gbps).",
-      "title": "Bandwidth"
+      "description": "The service's bandwidth (e.g. 10Mbps, 100Mbps, 1Gbps, 10Gbps)."
     },
     "maxPortSpeed": {
       "$ref": "informationRateQuantity.json#",
-      "description": "The service's maximum port speed (e.g. 10Mbps, 100Mbps, 1Gbps, 10Gbps).",
-      "title": "Maximum Port Speed"
+      "description": "The service's maximum port speed (e.g. 10Mbps, 100Mbps, 1Gbps, 10Gbps)."
     },
     "interfaceType": {
       "type": "string",
@@ -48,8 +44,7 @@
         "OPTICAL",
         "ELECTRICAL"
       ],
-      "description": "The UNI Handoff interface type to connect to the end customer's network (e.g., Electrical).",
-      "title": "Interface Type"
+      "description": "The UNI Handoff interface type to connect to the end customer's network (e.g., Electrical)."
     },
     "accessMedium": {
       "type": "string",
@@ -58,24 +53,20 @@
         "COAX",
         "TWISTED_PAIR"
       ],
-      "description": "The type of media the service  should delivered over (e.g., Fiber, Coax, Twisted Pair).",
-      "title": "Access Medium"
+      "description": "The type of media the service  should delivered over (e.g., Fiber, Coax, Twisted Pair)."
     },
     "newEnniRequired": {
       "type": "boolean",
-      "description": "Indicates if a new NNI needs to be established for this service.",
-      "title": "ENNI Required"
+      "description": "Indicates if a new NNI needs to be established for this service."
     },
     "buyerEnniId": {
       "type": "string",
-      "description": "The circuit identifier that the buyer uses to refer to the existing ENNI that is to be used to support this service.",
-      "title": "Buyer ENNI Identifier"
+      "description": "The circuit identifier that the buyer uses to refer to the existing ENNI that is to be used to support this service."
     },
     "enniLocation": {
       "$ref": "enniLocation.json#",
       "description": "The location of the ENNI.",
-      "maxLength": 45,
-      "title": "ENNI Location Request"
+      "maxLength": 45
     },
     "classOfService": {
       "type": "string",
@@ -84,21 +75,18 @@
         "MEDIUM",
         "LOW"
       ],
-      "description": "The desired Class of Service, as defined by MEF 23.1.",
-      "title": "Class Of Service"
+      "description": "The desired Class of Service, as defined by MEF 23.1."
     },
     "pricingTerm": {
       "type": "integer",
       "description": "The length of the service contract in months.",
       "minimum": 0,
-      "maximum": 999,
-      "title": "Pricing Term"
+      "maximum": 999
     },
     "desiredActivationDate": {
       "type": "string",
       "format": "date-time",
-      "description": "The desired activation date for the service formatted as  YYYY-MM-DD (eg 1997-07-16) or YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00).",
-      "title": "Desired Activation Date"
+      "description": "The desired activation date for the service formatted as  YYYY-MM-DD (eg 1997-07-16) or YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00)."
     }
   }
 }

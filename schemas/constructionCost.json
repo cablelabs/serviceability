@@ -19,13 +19,11 @@
     "description": {
       "type": "string",
       "description": "A description of the construction costs associated with the product.",
-      "maxLength": 300,
-      "title": "Description"
+      "maxLength": 300
     },
     "quote": {
       "$ref": "quote.json#",
-      "description": "The quote of the Construction Cost.",
-      "title": "Quote"
+      "description": "The quote of the Construction Cost."
     }
   }
 }

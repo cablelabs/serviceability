@@ -22,50 +22,42 @@
     "formattedAddressLine1": {
       "type": "string",
       "description": "A formatted address line that contains a non-fielded street address.",
-      "maxLength": 60,
-      "title": "Formatted Address Line"
+      "maxLength": 60
     },
     "formattedAddressLine2": {
       "type": "string",
       "description": "A formatted address line that contains a non-fielded street address, sub-address (e.g. Suite number), etc.",
-      "maxLength": 60,
-      "title": "Formatted Address Line"
+      "maxLength": 60
     },
     "locality": {
       "type": "string",
       "description": "A bounded locality within a city, town or shire principally of urban character.",
-      "maxLength": 50,
-      "title": "Locality"
+      "maxLength": 50
     },
     "city": {
       "type": "string",
       "description": "City that the address is in.",
-      "maxLength": 50,
-      "title": "City"
+      "maxLength": 50
     },
     "stateOrProvince": {
       "type": "string",
       "description": "The state or province that the address is in.",
-      "maxLength": 50,
-      "title": "State Or Province"
+      "maxLength": 50
     },
     "postcode": {
       "type": "string",
       "description": "A descriptor for a postal delivery area, used to speed and simplify the delivery of mail.",
-      "maxLength": 6,
-      "title": "Postal Code"
+      "maxLength": 6
     },
     "postcodeExtension": {
       "type": "string",
       "description": "The four-digit extension on an American postal code, what comes after the hyphen when specified.",
-      "maxLength": 4,
-      "title": "Postal Code Extension"
+      "maxLength": 4
     },
     "country": {
       "type": "string",
       "description": "The country that the address is in.",
-      "maxLength": 50,
-      "title": "Country"
+      "maxLength": 50
     }
   }
 }

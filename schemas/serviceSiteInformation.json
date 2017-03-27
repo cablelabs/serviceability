@@ -21,26 +21,22 @@
         "siteName": {
             "type": "string",
             "description": "A name by which the service site is known.",
-            "maxLength": 60,
-            "title": "Site Name"
+            "maxLength": 60
         },
         "siteDescription": {
             "type": "string",
             "description": "A description for the service site.",
-            "maxLength": 300,
-            "title": "Site Description"
+            "maxLength": 300
         },
         "siteCompanyName": {
             "type": "string",
             "description": "The name of the company that is located at the Service location. This may be different from the name of the Customer that ordered services at that Service Site.",
-            "maxLength": 25,
-            "title": "Site Company Name"
+            "maxLength": 25
         },
         "customerName": {
             "type": "string",
             "description": "The name of the end (retail) customer for the UNI.",
-            "maxLength": 25,
-            "title": "Customer Name"
+            "maxLength": 25
         },
         "siteAddressType": {
             "type": "string",
@@ -50,7 +46,7 @@
                 "ADDRESS_REFERENCE",
                 "GEOGRAPHIC_POINT"
             ],
-            "title": "Site Address Type"
+            "description": "Identifies the type of the site address to follow"
         },
         "siteAddress": {
             "type": "object",
@@ -68,14 +64,12 @@
                     "$ref": "addressReference.json#"
                 }
             ],
-            "description": "A property address for the site. Either a Site Address, a Site Code or a Site Geographic Point must be specified.",
-            "title": "Site Address"
+            "description": "A property address for the site. Either a Site Address, a Site Code or a Site Geographic Point must be specified."
         },
         "additionalSiteInformation": {
             "type": "string",
             "description": "Additional information about the Site. Equates to the ASR AAI field.",
-            "maxLength": 100,
-            "title": "Additional Site Information"
+            "maxLength": 100
         }
     }
 }

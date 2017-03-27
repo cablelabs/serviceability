@@ -15,13 +15,17 @@
       ],
       "description": "The type of the object, quote."
     },
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the Product Specification.",
+      "maxLength": 25
+    },
     "pricing": {
       "type": "array",
       "items": {
         "$ref": "pricingResponse.json#"
       },
-      "description": "An array of Pricing Response for the quote.",
-      "title": "Pricing"
+      "description": "An array of Pricing Response for the quote."
     }
   }
 }

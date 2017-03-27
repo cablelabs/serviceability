@@ -20,19 +20,16 @@
     "id": {
       "type": "string",
       "description": "The ENNI Location's unique identifier",
-      "maxLength": 15,
-      "title": "Unique Identifier"
+      "maxLength": 15
     },
     "link": {
       "$ref": "link.json#",
-      "description": "A link to the ENNI Location.",
-      "title": "ENNI Location Link"
+      "description": "A link to the ENNI Location."
     },
     "locationName": {
       "type": "string",
       "description": "Name of Data Center or Colocation Facility where NNI is established (i.e., A Location).",
-      "maxLength": 60,
-      "title": "ENNI Location Name"
+      "maxLength": 60
     },
     "enniLocationAddressType": {
       "type": "string",
@@ -42,8 +39,7 @@
         "ADDRESS_REFERENCE",
         "GEOGRAPHIC_POINT"
       ],
-      "description": "Identifies the type of address to be provided for the service location.",
-      "title": "ENNI Location Address Type"
+      "description": "Identifies the type of address to be provided for the service location."
     },
     "enniLocationAddress": {
       "type": "object",
@@ -61,8 +57,7 @@
           "$ref": "addressReference.json#"
         }
       ],
-      "description": "A site address of the site address type.",
-      "title": "ENNI Location Address"
+      "description": "A site address of the site address type."
     }
   }
 }

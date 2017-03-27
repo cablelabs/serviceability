@@ -19,24 +19,21 @@
       "type": "integer",
       "description": "The length of the service contract in months.",
       "minimum": 0,
-      "maximum": 999,
-      "title": "Pricing Term"
+      "maximum": 999
     },
     "oneTimeCharges": {
       "type": "array",
       "items": {
         "$ref": "oneTimeChargeResponse.json#"
       },
-      "description": "An array of One Time Charge on Pricing.",
-      "title": "One Time Charge"
+      "description": "An array of One Time Charge on Pricing."
     },
     "recurringCharges": {
       "type": "array",
       "items": {
         "$ref": "recurringChargeResponse.json#"
       },
-      "description": "An array of Recurring Charge on Pricing.",
-      "title": "Recurring Charge"
+      "description": "An array of Recurring Charge on Pricing."
     }
   }
 }
