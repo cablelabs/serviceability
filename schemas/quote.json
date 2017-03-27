@@ -23,7 +23,7 @@
     "pricing": {
       "type": "array",
       "items": {
-        "$ref": "pricingResponse.json#"
+        "$ref": "pricing.json#"
       },
       "description": "An array of Pricing Response for the quote."
     }

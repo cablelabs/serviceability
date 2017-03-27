@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "recurringChargeResponse",
-  "id": "recurringChargeResponse",
+  "title": "recurringCharge",
+  "id": "recurringCharge",
   "description": "A charge that is levied repeatedly. An example would be a monthly charge.",
   "type": "object",
   "required": [
@@ -12,9 +12,9 @@
     "objectType": {
       "type": "string",
       "enum": [
-        "recurringChargeResponse"
+        "recurringCharge"
       ],
-      "description": "The type of the object, recurringChargeResponse."
+      "description": "The type of the object, recurringCharge."
     },
     "name": {
       "type": "string",

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "pricingResponse",
-  "id": "pricingResponse",
+  "title": "pricing",
+  "id": "pricing",
   "description": "A representation of details of a Pricing.",
   "type": "object",
   "required": [
@@ -11,9 +11,9 @@
     "objectType": {
       "type": "string",
       "enum": [
-        "pricingResponse"
+        "pricing"
       ],
-      "description": "The type of the object, pricingResponse."
+      "description": "The type of the object, pricing."
     },
     "pricingTerm": {
       "type": "integer",
@@ -24,14 +24,14 @@
     "oneTimeCharges": {
       "type": "array",
       "items": {
-        "$ref": "oneTimeChargeResponse.json#"
+        "$ref": "oneTimeCharge.json#"
       },
       "description": "An array of One Time Charge on Pricing."
     },
     "recurringCharges": {
       "type": "array",
       "items": {
-        "$ref": "recurringChargeResponse.json#"
+        "$ref": "recurringCharge.json#"
       },
       "description": "An array of Recurring Charge on Pricing."
     }
