@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "oneTimeChargeResponse",
-  "id": "oneTimeChargeResponse",
+  "title": "oneTimeCharge",
+  "id": "oneTimeCharge",
   "description": "An one-time charge is levied once. An example is an activation fee.",
   "type": "object",
   "required": [
@@ -12,9 +12,9 @@
     "objectType": {
       "type": "string",
       "enum": [
-        "oneTimeChargeResponse"
+        "oneTimeCharge"
       ],
-      "description": "The type of the object, oneTimeChargeResponse."
+      "description": "The type of the object, oneTimeCharge."
     },
     "name": {
       "type": "string",
