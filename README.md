@@ -16,3 +16,7 @@ Serviceability provides an API to help determine if a particular service is avai
 | `/schemas` | JSON Schema files for Serviceability |
 
 The best place to start is the [Serviceability Markdown file in the documentation directory](/documentation/serviceability.md)
+
+## Other important stuff
+
+We use an [MIT License](LICENSE).
