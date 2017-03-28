@@ -1,0 +1,176 @@
+{
+  "objectType": "serviceabilityResponse",
+  "id": "SRR-CC-13043135",
+  "link": {
+    "href": "/api/serviceability-requests/SRR-CC-13043135"
+  },
+  "status": "UNDER_REVIEW",
+  "projectId": "PRJ-CC-12345678",
+  "servicebilityRequestId": "SRQ-CC-13043135",
+  "buyerId": "Comcast",
+  "sellerId": "Cox",
+  "mpoeOnly": false,
+  "expirationDate": "2016-09-26T12:00:00.333Z",
+  "serviceSite" :{
+    "objectType": "serviceSiteInformation",
+    "siteCustomerName": "Quik Clean and Press",
+    "siteAddressType": "FORMATTED_ADDRESS",
+    "siteAddress": {
+      "addressLine1": "5630 E SANTA ANA CANYON RD",
+      "addressLine2": "STE 100",
+      "city": "ANAHEIM",
+      "stateOrProvince": "CA",
+      "country": "USA",
+      "postCode": "92807",
+      "postCodeExtension": "1234"
+    }
+  },
+  "confidence": {
+    "objectType": "serviceabilityConfidence",
+    "color": "YELLOW",
+    "estimatedResponseDate": "2016-09-26T12:00:00.333Z",
+    "reason": "Site Survey Required"
+  },
+  "installationInterval": 45,
+  "productSpecification": {
+    "objectType": "productSpecification",
+    "id": "PRD_GA_998",
+    "productName": "Fast Access EPL",
+    "productCode": "AE 1G",
+    "productType": "ACCESS_EPL",
+    "productCategory": "ETHERNET",
+    "productSpecDetail": {
+      "objectType": "ethernetProductSpecDetail",
+      "bandwidth": {
+        "objectType": "informationRateQuantity",
+        "amount": 10,
+        "quantity": "Mbps"
+      },
+      "accessMedium": "COAX",
+      "accessTechnology": "DOCSIS_3.1",
+      "classOfService": "HIGH",
+      "sellerClassOfService": "Real Time",
+      "mtuSize": 1526,
+      "colorForwardingEnabled": false,
+      "enniLocation": {
+        "objectType": "enniLocationResponse",
+        "enniLocationAddressType": "ADDRESS_REFERENCE",
+        "enniLocationAddress": {
+          "objectType": "addressReference",
+          "referenceType": "CLLI",
+          "reference": "ANHMCA17"
+        }
+      }
+    },
+    "quote": {
+      "objectType": "quote",
+      "id": "QT_GA_88754",
+      "pricing": [
+        {
+          "objectType": "pricing",
+          "pricingTerm": 24,
+          "oneTimeCharges": [
+            {
+              "objectType": "oneTimeCharge",
+              "name": "Provisioning",
+              "price": {
+                "amount": 65,
+                "units": "USD"
+              }
+            }
+          ],
+          "recurringCharges": [
+            {
+              "objectType": "recurringCharge",
+              "name": "Installation",
+              "period": "MONTHLY",
+              "price": {
+                "amount": 150,
+                "units": "USD"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "features": [
+      {
+        "objectType": "productSpecification",
+        "id": "PRD_UA_234",
+        "productName": "1 Gb UNI",
+        "productCode": "U 1G",
+        "productType": "UNI",
+        "productCategory": "ETHERNET",
+        "productSpecDetail": {
+          "objectType": "uniProductSpecDetail",
+          "portSpeed": {
+            "objectType": "informationRateQuantity",
+            "amount": 10,
+            "quantity": "Mbps"
+          }
+        },
+        "quote": {
+          "objectType": "quote",
+          "id": "QT_U_623",
+          "pricing": [
+            {
+              "objectType": "pricing",
+              "pricingTerm": 24,
+              "oneTimeCharges": [
+                {
+                  "objectType": "oneTimeCharge",
+                  "name": "Installation",
+                  "price": {
+                    "amount": 1100,
+                    "units": "USD"
+                  }
+                }
+              ],
+              "recurringCharges": [
+                {
+                  "objectType": "recurringCharge",
+                  "name": "Installation",
+                  "period": "MONTHLY",
+                  "price": {
+                    "amount": 85,
+                    "units": "USD"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "construction": {
+          "quote": {
+            "objectType": "quote",
+            "id": "QT_CON_3483",
+            "pricing": [
+              {
+                "objectType": "pricing",
+                "pricingTerm": 24,
+                "oneTimeCharges": [
+                  {
+                    "objectType": "oneTimeCharge",
+                    "name": "Facilities to building",
+                    "price": {
+                      "amount": 1500,
+                      "units": "USD"
+                    }
+                  },
+                  {
+                    "objectType": "oneTimeCharge",
+                    "name": "Inside cabling to suite",
+                    "price": {
+                      "amount": 650,
+                      "units": "USD"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
