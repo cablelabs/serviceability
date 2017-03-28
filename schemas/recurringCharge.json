@@ -6,6 +6,8 @@
   "type": "object",
   "required": [
     "objectType",
+    "name",
+    "period",
     "price"
   ],
   "properties": {

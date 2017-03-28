@@ -5,7 +5,9 @@
   "description": "Details of a Quote.",
   "type": "object",
   "required": [
-    "objectType"
+    "objectType",
+    "id",
+    "pricing"
   ],
   "properties": {
     "objectType": {

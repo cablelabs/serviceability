@@ -4,6 +4,9 @@
   "id": "money",
   "description": "A base / value business entity used to represent money.",
   "type": "object",
+  "required": [
+    "amount"
+  ],
   "properties": {
     "amount": {
       "type": "string",
