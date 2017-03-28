@@ -5,7 +5,9 @@
   "description": "Details of an ethernet service. These details are used for Serviceability Requests.",
   "type": "object",
   "required": [
-      "objectType"
+      "objectType",
+      "serviceCategory",
+      "serviceType"
   ],
   "properties": {
     "objectType": {

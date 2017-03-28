@@ -9,8 +9,7 @@
       "buyerId",
       "sellerId",
       "serviceSite",
-      "serviceabilityConfidence",
-      "serviceDetails"
+      "serviceabilityConfidence"
   ],
   "properties": {
     "status": {
@@ -63,12 +62,9 @@
       "minimum": 0,
       "maximum": 999
     },
-    "serviceDetails": {
-      "type": "array",
-      "items": {
-        "$ref": "serviceDetailResponse.json#"
-      },
-      "description": "Details of the service capabilities at the service location."
+    "productSpecification": {
+        "$ref": "productSpecification.json#",
+        "description": "Details of the product specification and associated pricing (offerings) returned with the response."
     }
   }
 }

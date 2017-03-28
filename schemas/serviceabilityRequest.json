@@ -9,7 +9,7 @@
       "buyerId",
       "sellerId",
       "serviceSite",
-      "serviceDetails"
+      "serviceDetail"
   ],
   "properties": {
     "objectType": {

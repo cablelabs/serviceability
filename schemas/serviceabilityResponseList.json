@@ -4,6 +4,10 @@
   "id": "serviceabilityResponseList",
   "description": "A list of Serviceability Response resources with additional meta information.",
   "type": "object",
+  "required": [
+      "available",
+      "returned"
+  ],
   "properties": {
     "available": {
       "type": "number",

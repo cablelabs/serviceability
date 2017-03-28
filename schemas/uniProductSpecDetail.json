@@ -5,7 +5,8 @@
   "description": "Details of an UNI product specification. These details are used for Serviceability Responses.",
   "type": "object",
   "required": [
-      "objectType"
+      "objectType",
+      "portSpeed"
   ],
   "properties": {
     "objectType": {

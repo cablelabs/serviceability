@@ -11,8 +11,7 @@
       "buyerId",
       "sellerId",
       "serviceSite",
-      "serviceabilityConfidence",
-      "serviceDetails"
+      "serviceabilityConfidence"
   ],
   "properties": {
     "objectType": {

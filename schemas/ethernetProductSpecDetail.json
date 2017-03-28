@@ -5,7 +5,8 @@
   "description": "Details of an ethernet product specification. These details are used for Serviceability Responses.",
   "type": "object",
   "required": [
-      "objectType"
+      "objectType",
+      "bandwidth"
   ],
   "properties": {
     "objectType": {
